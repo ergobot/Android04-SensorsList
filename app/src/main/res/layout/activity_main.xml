@@ -9,8 +9,48 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.sensorslist.MainActivity">
 
-    <TextView
+    <RelativeLayout
+        android:id="@+id/lightsensorlayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_margin="0dp"
+        android:orientation="vertical"
+        android:paddingLeft="4dp">
+
+        <TextView
+            android:id="@+id/lightname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Name: Light Sensor"
+            tools:text="Light Sensor"
+            android:gravity="top|left"/>
+        <TextView
+            android:id="@+id/lightdescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Desc: Measure light"
+            tools:text="Measure the amount of light"
+            android:gravity="top|left"
+            android:paddingTop="0dp"
+            android:layout_marginTop="4dp"
+            android:layout_below="@+id/lightname"
+            />
+        <TextView
+            android:id="@+id/lightvalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            tools:text="Value: "
+            android:gravity="top|left"
+            android:paddingTop="0dp"
+            android:layout_marginTop="4dp"
+            android:layout_below="@+id/lightdescription"
+            />
+    </RelativeLayout>
+
+
+
+
 </RelativeLayout>
